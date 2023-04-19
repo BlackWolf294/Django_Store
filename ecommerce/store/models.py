@@ -18,4 +18,4 @@ class Product(models.Model):
     photo = models.ImageField(upload_to="products", default=False)
     
     def __str__(self):
-        return self.name
+        return 'Producto: %s, price: %s, digital: %s, photo: %s' %(self.name, self.price, self.digital, self.photo)
